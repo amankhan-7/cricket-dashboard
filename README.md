@@ -31,33 +31,31 @@ A full-stack IPL Live Score Dashboard that displays live or completed IPL match 
 
 📂 Project Structure  
 
-project-root/
+cricket-dashboard-root/
 │
 ├── Frontend/
-│ ├── components/
-│ │ ├── Navbar.jsx # Navigation bar
-│ │ ├── Home.jsx # Main dashboard view
-│ ├── contexts/
-│ │ ├── GlobalStore.js # Context API logic
-│ │ ├── GlobalStoreProvider.jsx # Provider wrapper
-│ ├── App.jsx # Main app entry
-│ ├── main.jsx # Vite entry point
-│ ├── index.css # Tailwind styles
-│ └── vite.config.js # Vite config
+│   ├── components/
+│   │   ├── Navbar.jsx             # Navigation bar
+│   │   └── Home.jsx               # Main dashboard view
+│   ├── contexts/
+│   │   ├── GlobalStore.js         # Context API logic
+│   │   └── GlobalStoreProvider.jsx # Provider wrapper
+│   ├── App.jsx                    # Main app entry
+│   ├── main.jsx                   # Vite entry point
+│   ├── index.css                  # Tailwind styles
+│   └── vite.config.js             # Vite config
 │
 ├── Backend/
-│ ├── Models/
-│ │ ├── Match.js # Mongoose schema for match
-│ ├── Routes/
-│ │ ├── Routes.js # Express route for match API
-│ ├── index.js # Server entry point
-│ └── .env # Environment variables (Mongo URI)
+│   ├── Models/
+│   │   └── Match.js               # Mongoose schema for match
+│   ├── Routes/
+│   │   └── Routes.js              # Express route for match API
+│   ├── index.js                   # Server entry point
+│   └── .env                       # Environment variables (Mongo URI)
 │
 ├── .gitignore
 ├── README.md
-└── package.json # Project metadata and scripts
-
-
+└── package.json                  # Project metadata and scripts
 
 ---
 
