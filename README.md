@@ -61,28 +61,34 @@ ceicket-dashboard-root/
 
 📦 Installation & Setup 
 ### 1.🌐 Configure Environment Variables
-Create a .env file inside the Backend folder and add your MongoDB Atlas connection string like this:
+Create a .env file inside the Backend folder and add MongoDB Atlas connection string like this:
 
-markdown ```MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/ipl-db?retryWrites=true&w=majority
-PORT=5000```
+```
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/ipl-db?retryWrites=true&w=majority
+PORT=5000
+```
 
 ##  2. Backend
 cd Backend
 npm install
 node index.js
-```markdown Backend runs on https://cricket-dashboard-1ulr.onrender.com/api/matches ```
+```
+Backend runs on https://cricket-dashboard-1ulr.onrender.com/api/matches 
+```
 
 ## 3. Frontend
 
 cd Frontend
 npm install
 npm run dev
-```markdown Frontend runs on https://cricket-dashboard-frontend.onrender.com ```
+```
+Frontend runs on https://cricket-dashboard-frontend.onrender.com
+```
 
 ### 4. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/ipl-live-score-dashboard.git
-cd ipl-live-score-dashboard        
+git clone https://github.com/amankhan-7/cricket-dashboard.git
+cd cricket-dashboard     
  ```
 
 
