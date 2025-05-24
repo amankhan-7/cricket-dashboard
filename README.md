@@ -69,14 +69,14 @@ cd ipl-live-score-dashboard
 ##  Backend
 cd Backend
 npm install
-# Create .env file with your MongoDB URI
+Create .env file with your MongoDB URI
 node index.js
-# Backend runs on https://cricket-dashboard-1ulr.onrender.com/api/matches
+Backend runs on https://cricket-dashboard-1ulr.onrender.com/api/matches
 
 ## Frontend
 
 cd Frontend
 npm install
 npm run dev
-# Frontend runs on https://cricket-dashboard-frontend.onrender.com
+Frontend runs on https://cricket-dashboard-frontend.onrender.com
 
