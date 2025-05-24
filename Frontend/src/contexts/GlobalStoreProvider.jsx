@@ -3,7 +3,7 @@ import GlobalStore from './GlobalStore'
 
 export default function GlobalStoreProvider({ children }) {
 
-    const host = `${import.meta.env.VITE_API_BASE_URL}/api/matches`;
+    const host = "https://cricket-dashboard-1ulr.onrender.com/api/matches";
 
     const [matchData, setMatchData] = useState([]);
     const [error, setError] = useState();
