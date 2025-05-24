@@ -30,7 +30,7 @@ A full-stack IPL Live Score Dashboard that displays live or completed IPL match 
 ---
 
 📂 Project Structure  
-
+```markdown
 cricket-dashboard-root/
 │
 ├── Frontend/
@@ -56,28 +56,27 @@ cricket-dashboard-root/
 ├── .gitignore
 ├── README.md
 └── package.json                  # Project metadata and scripts
-
+ ```
 ---
 
 📦 Installation & Setup
 
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/ipl-live-score-dashboard.git
+cd ipl-live-score-dashboard        
+ ```
 ##  Backend
 cd Backend
 npm install
 # Create .env file with your MongoDB URI
 node index.js
-# Backend runs on http://localhost:5000
+# Backend runs on https://cricket-dashboard-1ulr.onrender.com/api/matches
 
 ## Frontend
 
 cd ../Frontend
 npm install
 npm run dev
-# Frontend runs on http://localhost:5173
-
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/ipl-live-score-dashboard.git
-cd ipl-live-score-dashboard        
+# Frontend runs on https://cricket-dashboard-frontend.onrender.com
 
