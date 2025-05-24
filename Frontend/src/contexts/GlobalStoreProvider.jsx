@@ -3,7 +3,7 @@ import GlobalStore from './GlobalStore'
 
 export default function GlobalStoreProvider({ children }) {
 
-    const host = "http://localhost:5000/api/matches";
+    const host = "https://cricket-dashboard-1ulr.onrender.com/api/matches";
 
     const [matchData, setMatchData] = useState([]);
     const [error, setError] = useState();
