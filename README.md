@@ -1,65 +1,85 @@
-# 🏏 IPL Live Score Dashboard
+🏏 IPL Live Score Dashboard
 
-A full-stack web application to display live and completed IPL match scores using **React (Vite)** for the frontend, **Node.js + Express** for the backend, and **MongoDB** for the database.
-
----      
-
-## 🚀 Features
-
-- Display list of IPL matches with:
-  - Team names
-  - Scores & overs
-  - Wickets
-  - Match status (Live / Completed)
-- Responsive UI (mobile + desktop)
-- Global state management using React Context API
-- TailwindCSS for clean and modern styling
-- Backend API with Express.js
-- MongoDB schema for match data
+📌 Overview  
+A full-stack IPL Live Score Dashboard that displays live or completed IPL match data including teams, scores, overs, wickets, and status. Built using modern tools like React, Vite, Tailwind CSS, Node.js, Express, and MongoDB. Match data is fetched from a backend API connected to a MongoDB database.
 
 ---
 
-## 🧰 Tech Stack
-
-### 🔹 Frontend
-- React + Vite
-- TailwindCSS
-- Context API
-
-### 🔹 Backend
-- Node.js + Express
-- MongoDB + Mongoose
+🚀 Features  
+📋 Display of team names, scores, overs, and match status  
+🔄 Fetches data from backend API using Context API  
+📱 Fully responsive (mobile and desktop)  
+📤 Clean and scalable folder structure  
+🌐 Optional: Deployable on Vercel/Netlify (frontend) and Render/Heroku (backend)
 
 ---
 
-## 🗂️ Project Structure    
+🛠️ Technologies Used  
 
-cricket-dashboard-root/
+**Frontend**  
+- React (with Vite)  
+- Tailwind CSS (for styling)  
+- React Lucide Icons (for UI icons)  
+- Context API (for global state management)
+
+**Backend**  
+- Node.js  
+- Express.js  
+- MongoDB (with Mongoose)
+
+---
+
+📂 Project Structure  
+
+project-root/
+│
 ├── Frontend/
 │ ├── components/
+│ │ ├── Navbar.jsx # Navigation bar
+│ │ ├── Home.jsx # Main dashboard view
 │ ├── contexts/
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── ...
+│ │ ├── GlobalStore.js # Context API logic
+│ │ ├── GlobalStoreProvider.jsx # Provider wrapper
+│ ├── App.jsx # Main app entry
+│ ├── main.jsx # Vite entry point
+│ ├── index.css # Tailwind styles
+│ └── vite.config.js # Vite config
+│
 ├── Backend/
-│ ├── Routes/
 │ ├── Models/
-│ ├── index.js
-│ └── ...
-└── README.md
+│ │ ├── Match.js # Mongoose schema for match
+│ ├── Routes/
+│ │ ├── Routes.js # Express route for match API
+│ ├── index.js # Server entry point
+│ └── .env # Environment variables (Mongo URI)
+│
+├── .gitignore
+├── README.md
+└── package.json # Project metadata and scripts
 
-## ⚙️ How to Run Locally
-## Backend
+
+
+---
+
+📦 Installation & Setup
+
+##  Backend
 cd Backend
 npm install
-# Add your MongoDB URI in .env (MONGO_URI)
+# Create .env file with your MongoDB URI
 node index.js
+# Backend runs on http://localhost:5000
 
 ## Frontend
-cd Frontend
+
+cd ../Frontend
 npm install
 npm run dev
+# Frontend runs on http://localhost:5173
 
-🌐 Deployment
-https://cricket-dashboard-frontend.onrender.com
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/ipl-live-score-dashboard.git
+cd ipl-live-score-dashboard        
 
