@@ -31,32 +31,32 @@ A full-stack IPL Live Score Dashboard that displays live or completed IPL match 
 
 📂 Project Structure  
 ```markdown
-cricket-dashboard-root/
+project-root/
 │
 ├── Frontend/
-│   ├── components/
-│   │   ├── Navbar.jsx             # Navigation bar
-│   │   └── Home.jsx               # Main dashboard view
-│   ├── contexts/
-│   │   ├── GlobalStore.js         # Context API logic
-│   │   └── GlobalStoreProvider.jsx # Provider wrapper
-│   ├── App.jsx                    # Main app entry
-│   ├── main.jsx                   # Vite entry point
-│   ├── index.css                  # Tailwind styles
-│   └── vite.config.js             # Vite config
+│ ├── components/
+│ │ ├── Navbar.jsx # Top navigation bar
+│ │ ├── Home.jsx # Main UI showing match data
+│ │ ├── Footer.jsx # Footer section
+│ ├── contexts/
+│ │ ├── GlobalStore.js # CreateContext and custom hook
+│ │ ├── GlobalStoreProvider.jsx # Provider and state logic
+│ ├── App.jsx # Main App component
+│ ├── main.jsx # Vite entry point
+│ ├── index.css # Tailwind base styles
+│ ├── package.json # Frontend dependencies
+│ └── .gitignore # Ignore node_modules, .env, etc.
 │
 ├── Backend/
-│   ├── Models/
-│   │   └── Match.js               # Mongoose schema for match
-│   ├── Routes/
-│   │   └── Routes.js              # Express route for match API
-│   ├── index.js                   # Server entry point
-│   └── .env                       # Environment variables (Mongo URI)
+│ ├── Models/
+│ │ ├── Match.js # Mongoose schema for matches
+│ ├── Routes/
+│ │ ├── Routes.js # Express routes for match data
+│ ├── index.js # Entry point for Express server
+│ ├── package.json # Backend dependencies
+│ └── .gitignore # Ignore node_modules, .env, etc.
 │
-├── .gitignore
-├── README.md
-└── package.json                  # Project metadata and scripts
- ```
+└──README.md # Project documentation
 ---
 
 📦 Installation & Setup
@@ -75,7 +75,7 @@ node index.js
 
 ## Frontend
 
-cd ../Frontend
+cd Frontend
 npm install
 npm run dev
 # Frontend runs on https://cricket-dashboard-frontend.onrender.com
